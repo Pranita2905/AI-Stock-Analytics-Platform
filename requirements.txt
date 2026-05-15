@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+scikit-learn
+plotly
+requests
+reportlab
+fastapi
+uvicorn
+xgboost
+mlflow
+evidently
