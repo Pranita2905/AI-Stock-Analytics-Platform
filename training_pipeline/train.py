@@ -7,9 +7,7 @@ import pickle
 import os
 
 # Load dataset
-df = pd.read_csv(
-    r"C:\Users\HP\Desktop\ML-ml\End-to-End-ML-Platform\data\raw\RELIANCE.csv"
-)
+df = pd.read_csv("data/raw/RELIANCE.csv")
 
 # Select important features
 X = df[[
@@ -59,10 +57,8 @@ print("R2 Score:", r2)
 os.makedirs("models", exist_ok=True)
 
 # Save model
-pickle.dump(
-    model,
-    open("C:/Users/HP/Desktop\ML-ml/End-to-End-ML-Platform/models/model.pkl", "wb")
-)
+with open("models/model.pkl", "wb") as f:
+    pickle.dump(model, f)
 
 print("Model Saved Successfully")
 # SAVE METRICS
