@@ -20,7 +20,7 @@ data/
 datasets/
 
 # Model files
-*.pkl
+
 *.joblib
 
 # Logs
